@@ -5,6 +5,7 @@
 <title>APEC Digital Trade Policy Dialogue</title>
 
 <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+<link href="https://cdn.jsdelivr.net/npm/bootstrap-icons/font/bootstrap-icons.css" rel="stylesheet">
 
 <style>
 body {
@@ -16,55 +17,38 @@ body {
 .header {
   position: relative;
   color: white;
-  padding: 80px 20px;
+  padding: 90px 20px;
   text-align: center;
   background: url('images/header.jpeg') center/cover no-repeat;
 }
 
-/* DARK OVERLAY (makes text readable) */
 .header::before {
   content: '';
   position: absolute;
-  top: 0;
-  left: 0;
-  right: 0;
-  bottom: 0;
-  background: rgba(53, 95, 124, 0.75); /* your blue tone */
+  inset: 0;
+  background: rgba(53, 95, 124, 0.4);
 }
 
-/* MAKE TEXT SIT ABOVE OVERLAY */
-.header h1 {
-  font-size: 40px;
-  font-weight: 700;
-}
-
-.header p {
-  font-size: 18px;
-  opacity: 0.9;
-}
-
-  
+.header h1,
 .header p {
   position: relative;
   z-index: 1;
 }
-.header p {
-  margin-top: 10px;
-  font-size: 16px;
-  opacity: 0.9;
+
+.header h1 {
+  font-size: 40px;
+  font-weight: 700;
 }
 
 /* TABS */
 .nav-tabs .nav-link {
   border: none;
   color: #555;
-  font-weight: 500;
 }
 
 .nav-tabs .nav-link.active {
   border-bottom: 3px solid #355f7c;
   color: #355f7c;
-  background: none;
 }
 
 /* CARDS */
@@ -72,6 +56,26 @@ body {
   border: none;
   border-radius: 12px;
   box-shadow: 0 4px 12px rgba(0,0,0,0.06);
+}
+
+/* ICON CARDS */
+.icon-card {
+  background: white;
+  border-radius: 12px;
+  padding: 25px;
+  text-align: center;
+  transition: 0.3s;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.06);
+}
+
+.icon-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 8px 20px rgba(0,0,0,0.1);
+}
+
+.icon-card i {
+  font-size: 32px;
+  color: #355f7c;
 }
 
 /* TIMELINE */
@@ -107,11 +111,6 @@ body {
   border-radius: 10px;
   margin-left: 20px;
   flex: 1;
-  box-shadow: 0 3px 10px rgba(0,0,0,0.05);
-}
-
-.content h5 {
-  margin: 5px 0;
 }
 
 /* SPEAKERS */
@@ -126,11 +125,6 @@ body {
   height: 180px;
   object-fit: cover;
 }
-
-/* MAP */
-iframe {
-  border-radius: 12px;
-}
 </style>
 
 </head>
@@ -144,140 +138,152 @@ iframe {
 
 <div class="container mt-4">
 
-  <!-- TABS -->
-  <ul class="nav nav-tabs" role="tablist">
-    <li class="nav-item">
-      <button class="nav-link active" data-bs-toggle="tab" data-bs-target="#overview">Overview</button>
-    </li>
-    <li class="nav-item">
-      <button class="nav-link" data-bs-toggle="tab" data-bs-target="#agenda">Agenda</button>
-    </li>
-    <li class="nav-item">
-      <button class="nav-link" data-bs-toggle="tab" data-bs-target="#speakers">Speakers</button>
-    </li>
-    <li class="nav-item">
-      <button class="nav-link" data-bs-toggle="tab" data-bs-target="#directions">Directions</button>
-    </li>
-  </ul>
+<ul class="nav nav-tabs">
+  <li class="nav-item">
+    <button class="nav-link active" data-bs-toggle="tab" data-bs-target="#overview">Overview</button>
+  </li>
+  <li class="nav-item">
+    <button class="nav-link" data-bs-toggle="tab" data-bs-target="#agenda">Agenda</button>
+  </li>
+  <li class="nav-item">
+    <button class="nav-link" data-bs-toggle="tab" data-bs-target="#speakers">Speakers</button>
+  </li>
+  <li class="nav-item">
+    <button class="nav-link" data-bs-toggle="tab" data-bs-target="#directions">Directions</button>
+  </li>
+</ul>
 
-  <div class="tab-content mt-4">
+<div class="tab-content mt-4">
 
-    <!-- OVERVIEW -->
-    <div class="tab-pane fade show active" id="overview">
-      <div class="card p-4">
-        <h3>About the Event</h3>
-        <p>This dialogue brings together policymakers, industry leaders, and experts to explore how artificial intelligence is shaping the future of digital trade across APEC economies.</p>
-      </div>
-    </div>
+<!-- OVERVIEW -->
+<div class="tab-pane fade show active" id="overview">
 
-    <!-- AGENDA -->
-    <div class="tab-pane fade" id="agenda">
-      <div class="card p-4">
+<div class="card p-4 mb-4">
+  <h3>About the Dialogue</h3>
+  <p>Since 2016, APEC Digital Trade Policy Dialogues have brought together policymakers and industry leaders to examine emerging trends and opportunities in the digital economy.</p>
+  <p>The 2026 Dialogue focuses on how artificial intelligence is reshaping digital trade and how APEC economies can foster a pro-innovation environment.</p>
+</div>
 
-        <h3 class="mb-4">Agenda</h3>
+<h3 class="mb-4">Key Discussion Areas</h3>
 
-        <div class="timeline">
+<div class="row g-4">
 
-          <div class="timeline-item">
-            <div class="time">11:30 – 12:00</div>
-            <div class="content">
-              <span class="badge bg-secondary">Arrival</span>
-              <h5>Registration and Arrival</h5>
-            </div>
-          </div>
+<div class="col-md-4">
+<div class="icon-card">
+<i class="bi bi-globe"></i>
+<h5>Data Flows</h5>
+<p>Cross-border movement of data</p>
+</div>
+</div>
 
-          <div class="timeline-item">
-            <div class="time">12:00 – 12:10</div>
-            <div class="content">
-              <span class="badge bg-primary">Opening</span>
-              <h5>Welcome and Opening Remarks</h5>
-            </div>
-          </div>
+<div class="col-md-4">
+<div class="icon-card">
+<i class="bi bi-building"></i>
+<h5>Regulation</h5>
+<p>Regulatory interoperability</p>
+</div>
+</div>
 
-          <div class="timeline-item">
-            <div class="time">12:10 – 12:50</div>
-            <div class="content">
-              <span class="badge bg-info text-dark">Session 1</span>
-              <h5>Keynote: How the AI Tech Stack is Driving Digital Trade</h5>
-            </div>
-          </div>
+<div class="col-md-4">
+<div class="icon-card">
+<i class="bi bi-shield-lock"></i>
+<h5>Cybersecurity</h5>
+<p>Trust and resilience</p>
+</div>
+</div>
 
-          <div class="timeline-item">
-            <div class="time">12:50 – 1:40</div>
-            <div class="content">
-              <span class="badge bg-info text-dark">Session 2</span>
-              <h5>Enabling Industry-led AI Innovation</h5>
-              <p>This session will examine elements of an enabling ecosystem for AI innovation, including cross-border data flows, regulatory interoperability, consumer protection, and cybersecurity.</p>
-            </div>
-          </div>
+<div class="col-md-4">
+<div class="icon-card">
+<i class="bi bi-cpu"></i>
+<h5>AI Innovation</h5>
+<p>AI tech stack growth</p>
+</div>
+</div>
 
-          <div class="timeline-item">
-            <div class="time">1:40 – 1:55</div>
-            <div class="content">
-              <span class="badge bg-warning text-dark">Break</span>
-              <h5>☕ Coffee Break</h5>
-            </div>
-          </div>
+<div class="col-md-4">
+<div class="icon-card">
+<i class="bi bi-people"></i>
+<h5>Collaboration</h5>
+<p>Public-private partnerships</p>
+</div>
+</div>
 
-          <div class="timeline-item">
-            <div class="time">1:55 – 2:55</div>
-            <div class="content">
-              <span class="badge bg-info text-dark">Session 3</span>
-              <h5>Accelerating AI through Collaboration</h5>
-              <p>This session will examine how industry and government can work together to strengthen AI innovation.</p>
-            </div>
-          </div>
+</div>
 
-          <div class="timeline-item">
-            <div class="time">2:55 – 3:00</div>
-            <div class="content">
-              <span class="badge bg-dark">Closing</span>
-              <h5>Closing Remarks</h5>
-            </div>
-          </div>
+</div>
 
-        </div>
+<!-- AGENDA -->
+<div class="tab-pane fade" id="agenda">
+<div class="card p-4">
 
-      </div>
-    </div>
+<h3 class="mb-4">Agenda</h3>
 
-    <!-- SPEAKERS -->
-    <div class="tab-pane fade" id="speakers">
-      <div class="row">
+<div class="timeline">
 
-        <div class="col-md-4">
-          <div class="card speaker-card">
-            <img src="https://via.placeholder.com/300">
-            <h5 class="mt-3">Speaker Name</h5>
-            <p>Organization</p>
-          </div>
-        </div>
+<div class="timeline-item">
+<div class="time">11:30</div>
+<div class="content"><h5>Registration</h5></div>
+</div>
 
-        <div class="col-md-4">
-          <div class="card speaker-card">
-            <img src="https://via.placeholder.com/300">
-            <h5 class="mt-3">Speaker Name</h5>
-            <p>Organization</p>
-          </div>
-        </div>
+<div class="timeline-item">
+<div class="time">12:00</div>
+<div class="content"><h5>Opening Remarks</h5></div>
+</div>
 
-      </div>
-    </div>
+<div class="timeline-item">
+<div class="time">12:10</div>
+<div class="content"><h5>Keynote</h5></div>
+</div>
 
-    <!-- DIRECTIONS -->
-    <div class="tab-pane fade" id="directions">
-      <div class="card p-4">
-        <h3>Venue</h3>
-        <p>Mexico City, Mexico</p>
+<div class="timeline-item">
+<div class="time">12:50</div>
+<div class="content"><h5>Session 2</h5></div>
+</div>
 
-        <iframe 
-          src="https://www.google.com/maps?q=Mexico+City&output=embed"
-          width="100%" height="300">
-        </iframe>
-      </div>
-    </div>
+<div class="timeline-item">
+<div class="time">1:40</div>
+<div class="content"><h5>Coffee Break</h5></div>
+</div>
 
-  </div>
+<div class="timeline-item">
+<div class="time">1:55</div>
+<div class="content"><h5>Session 3</h5></div>
+</div>
+
+</div>
+
+</div>
+</div>
+
+<!-- SPEAKERS -->
+<div class="tab-pane fade" id="speakers">
+<div class="row">
+
+<div class="col-md-4">
+<div class="card speaker-card">
+<img src="https://via.placeholder.com/300">
+<h5>Speaker Name</h5>
+<p>Organization</p>
+</div>
+</div>
+
+</div>
+</div>
+
+<!-- DIRECTIONS -->
+<div class="tab-pane fade" id="directions">
+<div class="card p-4">
+<h3>Venue</h3>
+<p>Mexico City, Mexico</p>
+
+<iframe 
+src="https://www.google.com/maps?q=Mexico+City&output=embed"
+width="100%" height="300"></iframe>
+
+</div>
+</div>
+
+</div>
 
 </div>
 
