@@ -14,17 +14,30 @@ body {
 
 /* HEADER */
 .header {
-  background: linear-gradient(135deg, #355f7c, #7fa4bf);
+  position: relative;
   color: white;
-  padding: 50px 20px;
+  padding: 80px 20px;
   text-align: center;
+  background: url('https://images.unsplash.com/photo-1556761175-b413da4baf72') center/cover no-repeat;
 }
 
-.header h1 {
-  margin: 0;
-  font-size: 34px;
+/* DARK OVERLAY (makes text readable) */
+.header::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: rgba(53, 95, 124, 0.75); /* your blue tone */
 }
 
+/* MAKE TEXT SIT ABOVE OVERLAY */
+.header h1,
+.header p {
+  position: relative;
+  z-index: 1;
+}
 .header p {
   margin-top: 10px;
   font-size: 16px;
