@@ -23,17 +23,14 @@ body {
 }
 
 .session-block {
-  background: #f2f4f7;
-  border-radius: 10px;
-  padding: 8px 12px;
   margin-left: 110px;
-  margin-top: 10px;
-  margin-bottom: 8px;
+  margin-top: 16px;
+  margin-bottom: 6px;
   font-size: 12px;
   font-weight: 600;
-  color: #6c7a89;
+  color: #7a8a99;
   text-transform: uppercase;
-  letter-spacing: 0.6px;
+  letter-spacing: 0.5px;
 }
 
 .header::before {
@@ -121,18 +118,12 @@ body {
 }
 
 .timeline::before {
-  content: '';
-  position: absolute;
-  left: 90px;
-  top: 0;
-  bottom: 0;
-  width: 3px;
-  background: #d6e1ec;
+  left: 85px;
 }
 
 .timeline-item {
   display: flex;
-  margin-bottom: 25px;
+  margin-bottom: 18px;
 }
 
 .time {
@@ -142,13 +133,16 @@ body {
 }
 
 .content {
-  background: #ffffff;
-  padding: 15px;
-  border-radius: 10px;
+  display: flex;
+  align-items: flex-start;
+  gap: 10px;
+  background: white;
+  padding: 14px 16px;
+  border-radius: 8px;
   margin-left: 20px;
   flex: 1;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.05);
 }
-
 
 .icon {
   font-size: 18px;
@@ -180,7 +174,8 @@ body {
 
 /* Break styling */
 .break {
-  background: #fff7e6;
+  background: #faf7f2;
+  border-radius: 8px;
 }
 
 /* Session labels */
