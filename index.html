@@ -17,39 +17,49 @@ body {
 /* HEADER */
 .header {
   position: relative;
-  height: 320px;
+  height: 260px; /* reduce height */
   display: flex;
   align-items: center;
-  justify-content: center;
-  text-align: center;
   color: white;
   background: url('images/header.jpeg') center/cover no-repeat;
 }
+
+</div>
 
 .header::before {
   content: "";
   position: absolute;
   inset: 0;
   background: linear-gradient(
-    rgba(0,0,0,0.55),
+    to right,
+    rgba(0,0,0,0.65),
     rgba(0,0,0,0.25)
   );
 }
 
+.header::after {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  height: 60px;
+  width: 100%;
+  background: linear-gradient(to bottom, transparent, #f5f7fb);
+}
+
 .header h1 {
-  font-size: 36px;
+  font-size: 34px;
   font-weight: 600;
   margin-bottom: 8px;
-  text-shadow: 0 2px 8px rgba(0,0,0,0.4);
 }
 
 .header-content {
   position: relative;
   z-index: 2;
+  padding-left: 10px;
 }
 
 .header .subtitle {
-  font-size: 16px;
+  font-size: 15px;
   color: rgba(255,255,255,0.85);
 }
 
@@ -282,9 +292,14 @@ p {
 <body>
 
 <div class="header">
-  <div class="header-content">
+  <div class="header-content container">
+
     <h1>APEC Digital Trade Policy Dialogue</h1>
-    <p class="subtitle">April 22, 2026 • Mexico City, Mexico</p>
+
+    <p class="subtitle">
+      April 22, 2026 • Mexico City, Mexico
+    </p>
+
   </div>
 </div>
 <div class="container-fluid px-5 mt-4">
