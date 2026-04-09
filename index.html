@@ -208,13 +208,30 @@ body {
   background: rgba(53, 95, 124, 0.06);
 }
 
+.nav-tabs .nav-link:hover i {
+  transform: translateY(-1px);
+  color: #8a97a6;
+}  
+
+.nav-tabs .nav-link:hover i {
+  color: #355f7c;
+}
+ 
 /* ACTIVE TAB */
 .nav-tabs .nav-link.active {
   color: #355f7c;
   background: rgba(53, 95, 124, 0.08);
   font-weight: 600;
 }
-
+  
+.nav-tabs .nav-link i {
+  margin-right: 6px;
+  font-size: 14px;
+  vertical-align: -1px;
+  transition: 0.2s;
+  color: #8a97a6;
+}
+  
 /* UNDERLINE INDICATOR (this is the key upgrade) */
 .nav-tabs .nav-link.active::after {
   content: "";
@@ -382,16 +399,27 @@ p {
 
 <ul class="nav nav-tabs">
   <li class="nav-item">
-    <button class="nav-link active" data-bs-toggle="tab" data-bs-target="#overview">Overview</button>
+    <button class="nav-link active" data-bs-toggle="tab" data-bs-target="#overview">
+      <i class="bi bi-house-door"></i> Overview
+    </button>
   </li>
+
   <li class="nav-item">
-    <button class="nav-link" data-bs-toggle="tab" data-bs-target="#agenda">Agenda</button>
+    <button class="nav-link" data-bs-toggle="tab" data-bs-target="#agenda">
+      <i class="bi bi-calendar3"></i> Agenda
+    </button>
   </li>
+
   <li class="nav-item">
-    <button class="nav-link" data-bs-toggle="tab" data-bs-target="#speakers">Speakers</button>
+    <button class="nav-link" data-bs-toggle="tab" data-bs-target="#speakers">
+      <i class="bi bi-mic"></i> Speakers
+    </button>
   </li>
+
   <li class="nav-item">
-    <button class="nav-link" data-bs-toggle="tab" data-bs-target="#directions">Directions</button>
+    <button class="nav-link" data-bs-toggle="tab" data-bs-target="#directions">
+      <i class="bi bi-geo-alt"></i> Directions
+    </button>
   </li>
 </ul>
 
