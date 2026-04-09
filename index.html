@@ -195,6 +195,43 @@ h5 {
   transition: 0.2s;
 }
 
+.event-meta {
+  display: flex;
+  gap: 25px;
+  flex-wrap: wrap;
+  margin: 10px 0 15px;
+}
+
+.meta-item {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  font-size: 14px;
+  color: #5f6b7a;
+}
+
+.meta-item i {
+  color: #355f7c;
+  font-size: 15px;
+}
+
+/* better button */
+.btn-cta {
+  display: inline-block;
+  background: #355f7c;
+  color: white;
+  padding: 12px 24px;
+  border-radius: 6px;
+  font-weight: 600;
+  text-decoration: none;
+  transition: 0.2s;
+}
+
+.btn-cta:hover {
+  background: #2c4f68;
+  transform: translateY(-1px);
+}
+
 .btn-register:hover {
   background: #2c4f68;
   transform: translateY(-1px);
@@ -231,38 +268,66 @@ h5 {
 </ul>
 
 <div class="tab-content mt-4">
-
 <!-- OVERVIEW -->
 <div class="tab-pane fade show active" id="overview">
   <div class="card p-4 mb-4">
-<h3>APEC Digital Trade Policy Dialogue</h3>
 
-<p class="text-muted mb-2">
-  April 22, 2026 • Mexico City, Mexico
-</p>
+    <h3 class="mb-2">APEC Digital Trade Policy Dialogue</h3>
 
-<p class="lead">
-  A high-level dialogue convening policymakers and industry leaders to examine how artificial intelligence is shaping the future of digital trade across APEC economies.
-</p>
+    <!-- EVENT META (NEW) -->
+    <div class="event-meta">
 
-<p class="context-text">
-  <em>Since 2016, Digital Trade Policy Dialogues (TPDs) have provided a platform for exploring emerging trends, shared challenges, and opportunities in the digital economy.</em>
-</p>
+      <div class="meta-item">
+        <i class="bi bi-calendar3"></i>
+        <span>April 22, 2026</span>
+      </div>
 
-<p>
-  As APEC economies increasingly leverage artificial intelligence (AI) to drive innovation and economic growth, this Dialogue builds on priorities outlined in the 
-  <span class="highlight">APEC AI Initiative</span> and the 
-  <span class="highlight">2025 APEC Digital and AI Ministerial Statement</span>. 
-  Discussions will focus on enabling a pro-innovation environment for industry-led AI growth.
-</p>
+      <div class="meta-item">
+        <i class="bi bi-clock"></i>
+        <span>12:00 – 3:00 PM (CST)</span>
+      </div>
 
-<p>
-  The Dialogue will examine how key policy areas—including cross-border data flows, regulatory interoperability, and cybersecurity—support the AI tech stack and facilitate digital trade. It will also highlight the role of public–private collaboration, featuring perspectives from APEC economies and industry leaders, including ABAC members.
-</p>
+      <div class="meta-item">
+        <i class="bi bi-geo-alt"></i>
+        <span>Mexico City, Mexico</span>
+      </div>
 
-<a href="https://tinyurl.com/2026DTPD" target="_blank" class="btn-register mt-3">
-  Register Now
-</a>
+      <div class="meta-item">
+        <i class="bi bi-people"></i>
+        <span>Policymakers & Industry Leaders</span>
+      </div>
+
+    </div>
+
+    <p class="lead mt-3">
+      A high-level dialogue convening policymakers and industry leaders to examine how artificial intelligence is shaping the future of digital trade across APEC economies.
+    </p>
+
+    <p class="context-text">
+      <em>Since 2016, Digital Trade Policy Dialogues (TPDs) have provided a platform for exploring emerging trends, shared challenges, and opportunities in the digital economy.</em>
+    </p>
+
+    <p>
+      As APEC economies increasingly leverage artificial intelligence (AI) to drive innovation and economic growth, this Dialogue builds on priorities outlined in the 
+      <span class="highlight">APEC AI Initiative</span> and the 
+      <span class="highlight">2025 APEC Digital and AI Ministerial Statement</span>.
+    </p>
+
+    <p>
+      Discussions will focus on enabling a pro-innovation environment for industry-led AI growth, including cross-border data flows, regulatory interoperability, and cybersecurity.
+    </p>
+
+    <p>
+      The Dialogue will also highlight the role of public–private collaboration, featuring perspectives from APEC economies and industry leaders, including ABAC members.
+    </p>
+
+    <!-- CTA (FIXED STYLE) -->
+    <a href="https://tinyurl.com/2026DTPD" target="_blank" class="btn-cta mt-3">
+      Register Now
+    </a>
+
+  </div>
+</div>
 
   <h4>Why Attend</h4>
 
