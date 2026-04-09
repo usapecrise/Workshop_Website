@@ -98,11 +98,20 @@ body {
 }
 
 .section-title {
-  margin-top: 20px;
-  position: relative;
+  margin-top: 24px;
   margin-bottom: 6px;
-  font-size: 18px;
+  font-size: 20px;
   font-weight: 600;
+}
+
+.section-title::before {
+  content: "";
+  display: block;
+  width: 40px;
+  height: 3px;
+  background: #355f7c;
+  margin-bottom: 14px;   /* 👈 THIS CONTROLS THE SPACE */
+  border-radius: 2px;
 }
   
 .section-subtext {
