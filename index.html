@@ -9,7 +9,7 @@
 
 <style>
 body {
-  background: #f5f7fb;
+  background: #f9fbfd;
   font-family: 'Inter', sans-serif;
   padding-bottom: 100px;
 }
@@ -94,8 +94,10 @@ body {
 .section-title {
   font-size: 18px;
   font-weight: 600;
+  border-top: 1px solid #e6edf3;
   margin-top: 25px;
-  margin-bottom: 10px; 
+  margin-bottom: 10px;
+  padding-top: 15px;
 }
 
 /* CARDS */
@@ -107,6 +109,10 @@ body {
   box-shadow: 0 6px 18px rgba(0,0,0,0.06);
   border: 1px solid #e6edf3; /* subtle edge */
   transition: 0.2s;
+}
+
+.icon-card:nth-child(odd) {
+  background: #fafdff;
 }
 
 .icon-card h6 {
@@ -124,9 +130,10 @@ body {
 }
 
 .icon-card i {
-  font-size: 28px;
   color: #355f7c;
-  margin-bottom: 10px;
+  background: rgba(53, 95, 124, 0.08);
+  padding: 10px;
+  border-radius: 50%;
 }
 
 
@@ -179,6 +186,7 @@ body {
 /* CARDS */
 .card {
   border: none;
+  background: #ffffff; 
   border-radius: 12px;
   box-shadow: 0 4px 12px rgba(0,0,0,0.06);
 }
