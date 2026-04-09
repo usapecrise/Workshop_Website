@@ -104,6 +104,19 @@ body {
   color: #6b7785;
 }
 
+.image-card {
+  border-radius: 14px;
+  overflow: hidden;
+  box-shadow: 0 12px 30px rgba(0,0,0,0.08);
+  height: 100%;
+}
+
+.image-card img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
 .meta-item i {
   color: #355f7c;
 }
@@ -396,6 +409,24 @@ p {
   box-shadow: 0 4px 14px rgba(0,0,0,0.08);
 }
 
+.btn-pill {
+  background: white;
+  color: #355f7c;
+  padding: 10px 18px;
+  border-radius: 999px;
+  font-weight: 600;
+  text-decoration: none;
+  font-size: 14px;
+  box-shadow: 0 6px 18px rgba(0,0,0,0.12);
+  transition: 0.2s;
+  white-space: nowrap;
+}
+
+.btn-pill:hover {
+  background: #f0f6fb;
+  transform: translateY(-1px);
+}
+
 /* optional: tighten spacing */
 .card > p {
   margin-bottom: 18px;
@@ -408,7 +439,7 @@ p {
 <body>
 
 <div class="header">
-  <div class="header-content container">
+  <div class="header-content container d-flex justify-content-between align-items-center">
     
     <div class="header-card">
       <h1>APEC Digital Trade Policy Dialogue</h1>
@@ -416,6 +447,12 @@ p {
         April 22, 2026 • Mexico City, Mexico
       </p>
     </div>
+
+    <a href="https://apec-rise.jotform.com/form/april-2026-apec-dtpd-registration"
+       target="_blank"
+       class="btn-pill">
+       Register Now →
+    </a>
 
   </div>
 </div>
@@ -452,7 +489,6 @@ p {
   <!-- OVERVIEW -->
   <div class="tab-pane fade show active" id="overview">
 
-    <!-- 👇 ADD THIS WRAPPER RIGHT HERE -->
     <div class="content-wrapper">
 
     <div class="row align-items-start">
@@ -492,11 +528,11 @@ p {
 
         <!-- INTRO -->
         <p class="lead-text">
-        Join policymakers, industry leaders, and experts from across APEC economies for a high-level dialogue on how artificial intelligence is reshaping the future of digital trade.
+        Explore how artificial intelligence is reshaping global digital trade — and what it means for policy, industry, and cross-border collaboration across APEC economies.
         </p>
 
         <p>
-        This Dialogue will explore the policies, partnerships, and innovations needed to support industry-led AI growth, with a focus on cross-border data flows, regulatory interoperability, and cybersecurity.
+        This high-level dialogue brings together senior policymakers and industry leaders to examine the policies, partnerships, and innovations needed to enable trusted data flows, strengthen regulatory alignment, and support responsible AI-driven growth.
         </p>
 
         <!-- WHY ATTEND -->
@@ -544,23 +580,8 @@ p {
 
       <!-- RIGHT SIDE FORM -->
       <div class="col-lg-5">
-        <div class="form-card">
-
-          <h5 class="form-title">Register for the Event</h5>
-
-         <iframe
-  src="https://apec-rise.jotform.com/form/april-2026-apec-dtpd-registration"
-  width="100%"
-  height="650"
-  frameborder="0"
-  scrolling="yes"
-  style="border:none;">
-</iframe>
-        </div>
-      </div>
-
-    </div>
-
+  <div class="image-card">
+    <img src="images/digital-trade.jpg" alt="Digital Trade & AI" />
   </div>
 </div>
   
