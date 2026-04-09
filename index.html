@@ -94,10 +94,22 @@ body {
 .section-title {
   font-size: 18px;
   font-weight: 600;
+  position: relative;
   border-top: 1px solid #e6edf3;
   margin-top: 25px;
   margin-bottom: 10px;
   padding-top: 15px;
+}
+
+.section-title::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 50px;
+  height: 3px;
+  background: #355f7c;
+  border-radius: 2px;
 }
 
 /* CARDS */
