@@ -23,9 +23,6 @@ body {
   color: white;
   background: url('images/header.jpeg') center/cover no-repeat;
 }
-
-</div>
-
 .header::before {
   content: "";
   position: absolute;
@@ -104,9 +101,10 @@ body {
 .section-subtext {
   font-size: 14px;
   color: #6b7785;
-  margin-top: 6px;
+  margin-top: 8px;
   margin-bottom: 18px;
   max-width: 500px;
+  display: block;
 }
 
 .section-title::before {
@@ -205,10 +203,11 @@ body {
 
 /* CARDS */
 .card {
-  border: none;
-  background: #ffffff; 
-  border-radius: 12px;
-  box-shadow: 0 4px 12px rgba(0,0,0,0.06);
+  background: #ffffff;
+  border-radius: 14px;
+  padding: 25px;
+  box-shadow: 0 8px 24px rgba(0,0,0,0.06);
+  border: 1px solid #e6edf3;
 }
 
 /* TIMELINE */
@@ -321,7 +320,7 @@ p {
 }
 
 /* optional: tighten spacing */
-.card p {
+.card > p {
   max-width: 700px;
 }
 
