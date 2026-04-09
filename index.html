@@ -187,14 +187,44 @@ body {
 }
 
 /* TABS */
-.nav-tabs .nav-link {
-  border: none;
-  color: #555;
+.nav-tabs {
+  border-bottom: 1px solid #e6edf3;
+  gap: 10px;
 }
 
-.nav-tabs .nav-link.active {
-  border-bottom: 3px solid #355f7c;
+.nav-tabs .nav-link {
+  border: none;
+  color: #6b7785;
+  font-weight: 500;
+  padding: 8px 14px;
+  border-radius: 8px;
+  position: relative;
+  transition: all 0.2s ease;
+}
+
+/* HOVER */
+.nav-tabs .nav-link:hover {
   color: #355f7c;
+  background: rgba(53, 95, 124, 0.06);
+}
+
+/* ACTIVE TAB */
+.nav-tabs .nav-link.active {
+  color: #355f7c;
+  background: rgba(53, 95, 124, 0.08);
+  font-weight: 600;
+}
+
+/* UNDERLINE INDICATOR (this is the key upgrade) */
+.nav-tabs .nav-link.active::after {
+  content: "";
+  position: absolute;
+  left: 12px;
+  right: 12px;
+  bottom: -8px;
+  height: 3px;
+  background: #355f7c;
+  border-radius: 2px;
 }
 
 /* FOOTER */
