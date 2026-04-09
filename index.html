@@ -26,18 +26,18 @@ body {
 }
 
 .header-card {
-  backdrop-filter: blur(6px);
-  background: rgba(255,255,255,0.08);
-  padding: 14px 18px;
+  background: rgba(20, 40, 60, 0.55);  /* darker, not white haze */
+  padding: 16px 20px;
   border-radius: 10px;
   display: inline-block;
+  backdrop-filter: blur(4px);
 }
   
 .content-wrapper {
   background: #ffffff;
   border-radius: 16px;
   padding: 25px;
-  margin-top: 10px;
+  margin-top: 20px;
   box-shadow: 0 12px 30px rgba(0,0,0,0.06);
 }
   
@@ -126,19 +126,22 @@ body {
 }
 
 .section-title {
-  margin-top: 24px;
-  margin-bottom: 6px;
+  margin-top: 28px;
+  margin-bottom: 8px;
   font-size: 20px;
   font-weight: 600;
+  position: relative;
+  padding-top: 12px;
 }
 
 .section-title::before {
   content: "";
-  display: block;
+  position: absolute;
+  top: 0;
+  left: 0;
   width: 40px;
   height: 3px;
   background: #355f7c;
-  margin-bottom: 14px;   /* 👈 THIS CONTROLS THE SPACE */
   border-radius: 2px;
 }
   
