@@ -13,24 +13,14 @@ body {
   font-family: 'Inter', sans-serif;
   padding-bottom: 100px;
 }
+
 /* HEADER */
 .header {
   position: relative;
   color: white;
-  padding: 90px 20px;
+  padding: 110px 20px;
   text-align: center;
   background: url('images/header.jpeg') center/cover no-repeat;
-}
-
-.session-block {
-  margin-left: 110px;
-  margin-top: 16px;
-  margin-bottom: 6px;
-  font-size: 12px;
-  font-weight: 600;
-  color: #7a8a99;
-  text-transform: uppercase;
-  letter-spacing: 0.5px;
 }
 
 .header::before {
@@ -46,19 +36,12 @@ body {
   z-index: 1;
 }
 
-.header h1 {
-  font-size: 40px;
-  font-weight: 700;
-}
-  
 .subtitle {
-  position: relative;
-  z-index: 1;
   margin-top: 10px;
   font-size: 16px;
   opacity: 0.9;
 }
-  
+
 /* TABS */
 .nav-tabs .nav-link {
   border: none;
@@ -70,6 +53,7 @@ body {
   color: #355f7c;
 }
 
+/* FOOTER */
 .footer {
   margin-top: 80px;
   padding: 40px 0;
@@ -96,33 +80,16 @@ body {
 
 .icon-card:hover {
   transform: translateY(-5px);
-  box-shadow: 0 8px 20px rgba(0,0,0,0.1);
-}
-
-.icon-card i {
-  font-size: 32px;
-  color: #355f7c;
 }
 
 /* TIMELINE */
 .timeline {
-  position: relative;
   margin-left: 10px;
 }
 
-.timeline::before {
-  display: none;
-}
-
-.desc {
-  font-size: 14px;
-  color: #5f6b7a;
-  margin-top: 4px;
-}
-  
 .timeline-item {
   display: flex;
-  margin-bottom: 18px;
+  margin-bottom: 16px;
 }
 
 .time {
@@ -146,29 +113,29 @@ body {
 .icon {
   font-size: 18px;
   color: #355f7c;
-  margin-right: 10px;
   margin-top: 4px;
 }
-  
-.content h5 {
-  margin: 0 0 5px;
+
+.desc {
+  font-size: 14px;
+  color: #5f6b7a;
+  margin-top: 4px;
 }
 
-/* Break styling */
+/* Session label */
+.session-block {
+  margin-left: 110px;
+  margin-top: 16px;
+  margin-bottom: 6px;
+  font-size: 12px;
+  font-weight: 600;
+  color: #7a8a99;
+  text-transform: uppercase;
+}
+
+/* Break */
 .break {
   background: #faf7f2;
-  border-radius: 8px;
-}
-
-/* Session labels */
-.session-label {
-  margin-left: 115px;
-  margin-bottom: 10px;
-  font-size: 13px;
-  font-weight: 600;
-  color: #6c7a89;
-  text-transform: uppercase;
-  letter-spacing: 0.5px;
 }
 
 /* SPEAKERS */
@@ -176,24 +143,10 @@ body {
   text-align: center;
   padding: 20px;
 }
-
-.speaker-card img {
-  width: 100%;
-  border-radius: 12px;
-  height: 180px;
-  object-fit: cover;
-}
 </style>
 
 </head>
-  
-<footer class="footer">
-  <div class="container text-center">
-    <p class="mb-1">APEC Digital Trade Policy Dialogue</p>
-    <p class="small text-muted">April 22, 2026 • Mexico City, Mexico</p>
-  </div>
-</footer>
-  
+
 <body>
 
 <div class="header">
@@ -202,8 +155,7 @@ body {
   <p class="subtitle">Shaping the future of AI and digital trade</p>
 </div>
 
-  
-<div class="container mt-4">
+<div class="container mt-5">
 
 <ul class="nav nav-tabs">
   <li class="nav-item">
@@ -215,11 +167,9 @@ body {
   <li class="nav-item">
     <button class="nav-link" data-bs-toggle="tab" data-bs-target="#speakers">Speakers</button>
   </li>
-<li class="nav-item">
-  <button class="nav-link" data-bs-toggle="tab" data-bs-target="#registration">
-    Registration
-  </button>
-</li>
+  <li class="nav-item">
+    <button class="nav-link" data-bs-toggle="tab" data-bs-target="#registration">Registration</button>
+  </li>
   <li class="nav-item">
     <button class="nav-link" data-bs-toggle="tab" data-bs-target="#directions">Directions</button>
   </li>
@@ -229,200 +179,105 @@ body {
 
 <!-- OVERVIEW -->
 <div class="tab-pane fade show active" id="overview">
-
-<div class="card p-4 mb-4">
-  <h3>Overview</h3>
-  <p><strong>The APEC Digital Trade Policy Dialogue</strong> brings together policymakers, industry leaders, and experts to examine how artificial intelligence is shaping digital trade.</p>
-  <p>The 2026 Dialogue will focus on enabling industry-led AI innovation, highlighting the policy frameworks, cross-border data flows, and public-private collaboration needed to support growth across APEC economies.</p>
-</div>
-
-<h3 class="mb-4">Key Discussion Areas</h3>
-
-<div class="row g-4">
-
-  <div class="col-md-4">
-    <div class="icon-card">
-      <i class="bi bi-globe"></i>
-      <h5>Cross-Border Data Flows</h5>
-      <p>Facilitating secure and seamless data movement across economies.</p>
-    </div>
+  <div class="card p-4 mb-4">
+    <h3>Overview</h3>
+    <p><strong>The APEC Digital Trade Policy Dialogue</strong> brings together policymakers, industry leaders, and experts to examine how artificial intelligence is shaping digital trade.</p>
+    <p>The 2026 Dialogue focuses on enabling industry-led AI innovation and strengthening collaboration across APEC economies.</p>
   </div>
-
-  <div class="col-md-4">
-    <div class="icon-card">
-      <i class="bi bi-diagram-3"></i>
-      <h5>Regulatory Interoperability</h5>
-      <p>Aligning policy frameworks to support digital trade.</p>
-    </div>
-  </div>
-
-  <div class="col-md-4">
-    <div class="icon-card">
-      <i class="bi bi-shield-lock"></i>
-      <h5>Cybersecurity</h5>
-      <p>Strengthening trust and resilience in digital systems.</p>
-    </div>
-  </div>
-
-  <div class="col-md-4">
-    <div class="icon-card">
-      <i class="bi bi-cpu"></i>
-      <h5>AI Innovation</h5>
-      <p>Advancing the AI tech stack to drive economic growth.</p>
-    </div>
-  </div>
-
-  <div class="col-md-4">
-    <div class="icon-card">
-      <i class="bi bi-people"></i>
-      <h5>Public-Private Collaboration</h5>
-      <p>Fostering partnerships across government and industry.</p>
-    </div>
-  </div>
-
-  <div class="col-md-4">
-    <div class="icon-card">
-      <i class="bi bi-lightbulb"></i>
-      <h5>Digital Trade Policy</h5>
-      <p>Developing policies that enable innovation and growth.</p>
-    </div>
-  </div>
-
-</div>
-
 </div>
 
 <!-- AGENDA -->
 <div class="tab-pane fade" id="agenda">
-<div class="card p-4">
+  <div class="card p-4">
 
-<div class="timeline">
-  
-    <div class="timeline-item">
-      <div class="time">11:30 – 12:00</div>
-      <div class="content">
-        <i class="bi bi-person-check icon"></i>
-        <div>
-          <h5>Registration and Arrival</h5>
+    <div class="timeline">
+
+      <div class="timeline-item">
+        <div class="time">11:30 – 12:00</div>
+        <div class="content"><i class="bi bi-person-check icon"></i><h5>Registration and Arrival</h5></div>
+      </div>
+
+      <div class="timeline-item">
+        <div class="time">12:00 – 12:10</div>
+        <div class="content"><i class="bi bi-megaphone icon"></i><h5>Welcome and Opening Remarks</h5></div>
+      </div>
+
+      <div class="session-block">Session 1</div>
+
+      <div class="timeline-item">
+        <div class="time">12:10 – 12:50</div>
+        <div class="content"><i class="bi bi-cpu icon"></i><h5>Keynote: How the AI Tech Stack is Driving Digital Trade</h5></div>
+      </div>
+
+      <div class="session-block">Session 2</div>
+
+      <div class="timeline-item">
+        <div class="time">12:50 – 1:40</div>
+        <div class="content">
+          <i class="bi bi-diagram-3 icon"></i>
+          <div>
+            <h5>Enabling Industry-led AI Innovation</h5>
+            <p class="desc">Examines cross-border data flows, regulatory interoperability, consumer protection, and cybersecurity.</p>
+          </div>
         </div>
       </div>
-    </div>
 
-    <div class="timeline-item">
-      <div class="time">12:00 – 12:10</div>
-      <div class="content highlight">
-        <i class="bi bi-megaphone icon"></i>
-        <div>
-          <h5>Welcome and Opening Remarks</h5>
+      <div class="timeline-item">
+        <div class="time">1:40 – 1:55</div>
+        <div class="content break"><i class="bi bi-cup-hot icon"></i><h5>Coffee Break</h5></div>
+      </div>
+
+      <div class="session-block">Session 3</div>
+
+      <div class="timeline-item">
+        <div class="time">1:55 – 2:55</div>
+        <div class="content">
+          <i class="bi bi-people icon"></i>
+          <div>
+            <h5>Accelerating AI through Collaboration</h5>
+            <p class="desc">Explores collaboration across government, industry, and stakeholders.</p>
+          </div>
         </div>
       </div>
-    </div>
-    <div class="session-block">Session 1</div>
 
-    <div class="timeline-item">
-      <div class="time">12:10 – 12:50</div>
-      <div class="content">
-        <i class="bi bi-cpu icon"></i>
-        <div>
-          <h5>Keynote: How the AI Tech Stack is Driving Digital Trade</h5>
-        </div>
+      <div class="timeline-item">
+        <div class="time">2:55 – 3:00</div>
+        <div class="content"><i class="bi bi-flag icon"></i><h5>Closing Remarks</h5></div>
       </div>
-    </div>
 
-    <div class="session-block">Session 2</div>
-
-    <div class="timeline-item">
-      <div class="time">12:50 – 1:40</div>
-      <div class="content">
-        <i class="bi bi-diagram-3 icon"></i>
-        <div>
-          <h5>Enabling Industry-led AI Innovation</h5>
-          <p class="desc">This session will examine elements of an enabling ecosystem for AI innovation, including cross-border data flows, regulatory interoperability, consumer protection, and cybersecurity, highlighting industry leaders across the region.</p>
-        </div>
-      </div>
-    </div>
-
-    <div class="timeline-item">
-      <div class="time">1:40 – 1:55</div>
-      <div class="content break">
-        <i class="bi bi-cup-hot icon"></i>
-        <div>
-          <h5>Coffee Break</h5>
-        </div>
-      </div>
-    </div>
-
-    <div class="session-block">Session 3</div>
-
-    <div class="timeline-item">
-      <div class="time">1:55 – 2:55</div>
-      <div class="content">
-        <i class="bi bi-people icon"></i>
-        <div>
-          <h5>Accelerating AI through Collaboration</h5>
-          <p class="desc">This session will examine how industry and government, along with other stakeholders, can work together to strengthen AI innovation with examples from APEC economies of stakeholder collaboration.</p>
-          <p><strong>Moderator:</strong> Name, Title</p>
-          <p><strong>Speaker:</strong> Dr. Ted Chang, Quanta Computer</p>
-        </div>
-      </div>
-    </div>
-
-    <div class="timeline-item">
-      <div class="time">2:55 – 3:00</div>
-      <div class="content highlight">
-        <i class="bi bi-flag icon"></i>
-        <div>
-          <h5>Closing Remarks</h5>
-        </div>
-      </div>
     </div>
 
   </div>
-
 </div>
 
-<!-- SPEAKERS -->
-<div class="tab-pane fade" id="speakers">
-<div class="row">
-
-<div class="col-md-4">
-<div class="card speaker-card">
-<img src="https://via.placeholder.com/300">
-<h5>Speaker Name</h5>
-<p>Organization</p>
-</div>
-</div>
-
-</div>
+<!-- REGISTRATION -->
+<div class="tab-pane fade" id="registration">
+  <div class="card p-4">
+    <h3>Registration</h3>
+    <p><strong>Deadline:</strong> April 15, 2026</p>
+    <a href="https://tinyurl.com/2026DTPD" target="_blank" class="btn btn-primary mt-3">Register</a>
+  </div>
 </div>
 
 <!-- DIRECTIONS -->
 <div class="tab-pane fade" id="directions">
-
   <div class="card p-4">
-
     <h3>Location</h3>
-
-    <p>
-      The 2026 APEC Digital Trade Policy Dialogue will be held in person at:
-    </p>
-
-    <p><strong>Universidad de las Américas Puebla (UDLAP)</strong><br>
-    Mexico City Campus</p>
-
-    <iframe 
-      src="https://www.google.com/maps?q=UDLAP+Mexico+City+Campus&output=embed"
-      width="100%" 
-      height="300"
-      style="border:0; border-radius:12px;">
-    </iframe>
-
+    <p><strong>Universidad de las Américas Puebla (UDLAP)</strong><br>Mexico City Campus</p>
+    <iframe src="https://www.google.com/maps?q=UDLAP+Mexico+City+Campus&output=embed" width="100%" height="300" style="border:0;border-radius:12px;"></iframe>
   </div>
-
-</div>
 </div>
 
 </div>
+
+</div>
+
+<footer class="footer">
+  <div class="container text-center">
+    <p class="mb-1">APEC Digital Trade Policy Dialogue</p>
+    <p class="small text-muted">April 22, 2026 • Mexico City, Mexico</p>
+  </div>
+</footer>
 
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
 
