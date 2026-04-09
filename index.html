@@ -59,8 +59,9 @@ body {
 }
 
 .event-meta-block {
-  margin-bottom: 15px;
+  margin-bottom: 12px;
 }
+
 
 .meta-row {
   display: flex;
@@ -90,22 +91,17 @@ body {
 }
 
 .section-title {
+  margin-top: 20px;
+  margin-bottom: 6px;
   font-size: 18px;
   font-weight: 600;
-  position: relative;
-  border-top: 1px solid #e6edf3;
-  margin-top: 25px;
-  margin-bottom: 10px;
-  padding-top: 15px;
 }
   
 .section-subtext {
+  margin-top: 0;
+  margin-bottom: 18px;
   font-size: 14px;
   color: #6b7785;
-  margin-top: 8px;
-  margin-bottom: 18px;
-  max-width: 500px;
-  display: block;
 }
 
 .section-title::before {
@@ -136,8 +132,11 @@ body {
 
 .icon-card h6 {
   color: #1f2d3d;
+  font-size: 16px;
   font-weight: 600;
-}  
+  margin-top: 8px;
+  margin-bottom: 6px;
+}
 
 .icon-card:hover {
   transform: translateY(-4px);
@@ -210,6 +209,10 @@ body {
   padding: 25px;
   box-shadow: 0 8px 24px rgba(0,0,0,0.06);
   border: 1px solid #e6edf3;
+}
+
+.card h2 {
+  margin-bottom: 10px;
 }
 
 /* TIMELINE */
@@ -323,9 +326,19 @@ p {
 
 /* optional: tighten spacing */
 .card > p {
-  max-width: 700px;
+  margin-bottom: 18px;
 }
 
+.card > p::after {
+  content: "";
+  display: block;
+  width: 40px;
+  height: 3px;
+  background: #355f7c;
+  margin-top: 12px;
+  border-radius: 2px;
+}
+  
 </style>
 
 </head>
@@ -410,7 +423,7 @@ p {
         <p class="section-subtext">
         Key areas shaping AI-driven digital trade across APEC economies
         </p>
-        <div class="row g-4 mt-2">
+        <div class="row g-4 mt-1">
 
           <div class="col-md-6">
             <div class="icon-card">
