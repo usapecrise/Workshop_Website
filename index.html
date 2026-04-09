@@ -65,6 +65,22 @@ body {
   font-weight: 600;
 }
 
+.tag-row {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+}
+
+.tag {
+  background: #eef4f8;
+  color: #355f7c;
+  padding: 6px 12px;
+  border-radius: 999px;
+  font-size: 12px;
+  font-weight: 500;
+  border: 1px solid #d6e1ec;
+}
+
 .header-content {
   position: relative;
   z-index: 2;
@@ -200,6 +216,17 @@ body {
   background: #fafdff;
 }
 
+.page-title {
+  font-size: 24px;
+  font-weight: 600;
+  color: white;
+}
+
+ .page-subtitle {
+  font-size: 13px;
+  color: rgba(255,255,255,0.85);
+} 
+  
 .icon-card h6 {
   color: #1f2d3d;
   font-size: 16px;
@@ -264,6 +291,16 @@ body {
   font-weight: 600;
 }
 
+.topbar {
+  background: linear-gradient(
+    to right,
+    #355f7c,
+    #4a7fa3
+  );
+  padding: 18px 0;
+  color: white;
+}
+
 .tab-content {
   margin-top: 20px;
 }
@@ -273,7 +310,8 @@ body {
   border-bottom: 1px solid #d6e1ec;
   margin-top: -5px;
   gap: 14px;
-  padding-bottom: 2px;
+  padding-bottom: 4px;
+  margin-bottom: 10px;
 }
 
 .nav-tabs .nav-link {
@@ -531,67 +569,98 @@ p {
 
 <div class="tab-content mt-4">
 
-  <!-- OVERVIEW -->
-  <div class="tab-pane fade show active" id="overview">
+<div class="tab-pane fade show active" id="overview">
 
-    <div class="content-wrapper">
+  <div class="content-wrapper">
 
     <div class="row align-items-start">
 
       <!-- LEFT SIDE -->
       <div class="col-lg-7">
 
-        <!-- TITLE -->
         <h2 class="event-title">APEC Digital Trade Policy Dialogue</h2>
 
         <div class="event-info-box">
+          <div class="info-item">
+            <i class="bi bi-calendar3"></i>
+            <span>Thursday, April 22, 2026</span>
+          </div>
 
-  <div class="info-item">
-    <i class="bi bi-calendar3"></i>
-    <span>Thursday, April 22, 2026</span>
-  </div>
+          <div class="info-item">
+            <i class="bi bi-clock"></i>
+            <span>12:00 – 3:00 PM (CST)</span>
+          </div>
 
-  <div class="info-item">
-    <i class="bi bi-clock"></i>
-    <span>12:00 – 3:00 PM (CST)</span>
-  </div>
+          <div class="info-item">
+            <i class="bi bi-geo-alt"></i>
+            <span>Mexico City, Mexico</span>
+          </div>
 
-  <div class="info-item">
-    <i class="bi bi-geo-alt"></i>
-    <span>Mexico City, Mexico</span>
-  </div>
+          <div class="info-item">
+            <i class="bi bi-people"></i>
+            <span>Policymakers & Industry Leaders</span>
+          </div>
+        </div>
 
-  <div class="info-item">
-    <i class="bi bi-people"></i>
-    <span>Policymakers & Industry Leaders</span>
-  </div>
-
-</div>
-
-        <!-- INTRO -->
         <p class="lead-text">
-        Explore how <span class="highlight">artificial intelligence</span> is reshaping 
-        <span class="highlight">global digital trade</span> — and what it means for policy, industry, and cross-border collaboration across APEC economies.
+          Explore how <span class="highlight">artificial intelligence</span> is reshaping 
+          <span class="highlight">global digital trade</span>.
         </p>
-        
+
         <p>
-        This high-level dialogue brings together senior policymakers and industry leaders to examine the policies, partnerships, and innovations needed to enable trusted data flows, strengthen regulatory alignment, and support responsible AI-driven growth.
+          This dialogue brings together policymakers and industry leaders to examine policies,
+          partnerships, and innovations supporting AI-driven growth.
         </p>
 
         <div class="tag-row mt-2">
-        <span class="tag">AI Policy</span>
-        <span class="tag">Data Flows</span>
-        <span class="tag">Cybersecurity</span>
-        <span class="tag">Public–Private Collaboration</span>
+          <span class="tag">AI Policy</span>
+          <span class="tag">Data Flows</span>
+          <span class="tag">Cybersecurity</span>
+          <span class="tag">Public–Private</span>
         </div>
 
-      <!-- RIGHT SIDE FORM -->
+        <!-- DISCUSSION -->
+        <h4 class="section-title mt-4">Discussion Focus</h4>
+        <p class="section-subtext">
+          Key areas shaping AI-driven digital trade across APEC economies
+        </p>
+
+        <div class="row g-3 mt-1">
+
+          <div class="col-md-6">
+            <div class="icon-card">
+              <i class="bi bi-cpu mb-2"></i>
+              <h6>AI & Digital Trade</h6>
+              <p>AI’s role in global trade</p>
+            </div>
+          </div>
+
+          <div class="col-md-6">
+            <div class="icon-card">
+              <i class="bi bi-globe mb-2"></i>
+              <h6>Data Flows</h6>
+              <p>Rules for data movement</p>
+            </div>
+          </div>
+
+        </div>
+
+      </div> <!-- ✅ CLOSE LEFT COLUMN -->
+
+      <!-- RIGHT SIDE -->
       <div class="col-lg-5">
-  <div class="image-card">
-    <img src="images/digital-trade.jpg" alt="Digital Trade & AI" />
+
+        <div class="image-card">
+          <img src="images/digital-trade.jpg" alt="Digital Trade & AI">
+        </div>
+
+      </div>
+
+    </div> <!-- ✅ CLOSE ROW -->
+
   </div>
+
 </div>
-  
 <!-- AGENDA -->
 <div class="tab-pane fade" id="agenda">
   <div class="card p-4">
