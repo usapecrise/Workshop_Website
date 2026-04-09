@@ -17,14 +17,21 @@ body {
 /* HEADER */
 .header {
   position: relative;
-  height: 260px;
+  height: 200px; /* 👈 shorter */
   display: flex;
   align-items: center;
   color: white;
   background: url('images/header.jpeg') center/cover no-repeat;
-  filter: saturate(1.1) contrast(1.05) brightness(0.9);
 }
 
+.header-card {
+  backdrop-filter: blur(6px);
+  background: rgba(255,255,255,0.08);
+  padding: 14px 18px;
+  border-radius: 10px;
+  display: inline-block;
+}
+  
 .content-wrapper {
   background: #ffffff;
   border-radius: 16px;
@@ -39,15 +46,26 @@ body {
   inset: 0;
   background: linear-gradient(
     to right,
-    rgba(35, 55, 75, 0.75),
-    rgba(35, 55, 75, 0.35)
+    rgba(20, 40, 60, 0.65),
+    rgba(20, 40, 60, 0.35),
+    rgba(20, 40, 60, 0.15)
+  );
+}
+
+.header::after {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(
+    to bottom,
+    transparent 70%,
+    rgba(241, 245, 249, 1) 100%
   );
 }
 
 .header h1 {
   font-size: 34px;
   font-weight: 600;
-  margin-bottom: 8px;
 }
 
 .header-content {
@@ -56,8 +74,8 @@ body {
 }
   
 .header .subtitle {
-  font-size: 15px;
-  color: rgba(255,255,255,0.85);
+  font-size: 14px;
+  color: rgba(255,255,255,0.9);
 }
 
 .event-title {
@@ -391,12 +409,13 @@ p {
 
 <div class="header">
   <div class="header-content container">
-
-    <h1>APEC Digital Trade Policy Dialogue</h1>
-
-    <p class="subtitle">
-      April 22, 2026 • Mexico City, Mexico
-    </p>
+    
+    <div class="header-card">
+      <h1>APEC Digital Trade Policy Dialogue</h1>
+      <p class="subtitle">
+        April 22, 2026 • Mexico City, Mexico
+      </p>
+    </div>
 
   </div>
 </div>
