@@ -17,20 +17,29 @@ body {
 /* HEADER */
 .header {
   position: relative;
-  color: white;
-  padding: 60px 20px;
+  height: 320px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
   text-align: center;
+  color: white;
   background: url('images/header.jpeg') center/cover no-repeat;
 }
 
 .header::before {
-  background: rgba(0, 0, 0, 0.15);
+  content: "";
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(
+    rgba(0,0,0,0.55),
+    rgba(0,0,0,0.35)
+  );
 }
 
 .header h1 {
-  font-size: 32px;
+  font-size: 36px;
   font-weight: 600;
-  margin-bottom: 8px;
+  margin-bottom: 10px;
 }
 
   
@@ -44,6 +53,17 @@ body {
   font-size: 14px;
   margin-bottom: 4px;
   opacity: 0.85;
+}
+
+.header-content {
+  position: relative;
+  z-index: 2;
+  max-width: 800px;
+}
+
+.header .subtitle {
+  font-size: 16px;
+  opacity: 0.9;
 }
 
 .event-title {
