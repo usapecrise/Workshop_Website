@@ -103,7 +103,7 @@ body {
 
 .timeline-item {
   display: flex;
-  margin-bottom: 16px;
+  margin-bottom: 20px;
 }
 
 .time {
@@ -115,15 +115,20 @@ body {
 .content {
   display: flex;
   align-items: flex-start;
-  gap: 10px;
+  gap: 12px;
   background: white;
-  padding: 14px 16px;
-  border-radius: 8px;
+  padding: 16px 18px;
+  border-radius: 10px;
   margin-left: 20px;
   flex: 1;
   box-shadow: 0 2px 8px rgba(0,0,0,0.05);
 }
 
+h5 {
+  font-size: 15px;
+  font-weight: 600;
+}
+  
 .icon {
   font-size: 18px;
   color: #355f7c;
@@ -131,25 +136,32 @@ body {
 }
 
 .desc {
-  font-size: 14px;
-  color: #5f6b7a;
+  font-size: 13px;
+  color: #6b7785;
   margin-top: 4px;
+  line-height: 1.5;
 }
 
 /* Session label */
 .session-block {
   margin-left: 110px;
-  margin-top: 16px;
-  margin-bottom: 6px;
-  font-size: 12px;
-  font-weight: 600;
+  margin-top: 20px;
+  margin-bottom: 8px;
+  font-size: 11px;
+  font-weight: 700;
   color: #7a8a99;
   text-transform: uppercase;
+  letter-spacing: 0.8px;
 }
 
 /* Break */
-.break {
-  background: #faf7f2;
+.break-coffee {
+  background: #f4efe7;
+  border-left: 4px solid #c8a97e;
+}
+  
+.break-coffee .icon {
+  color: #a67c52;
 }
 
 /* SPEAKERS */
@@ -270,25 +282,47 @@ body {
 <div class="tab-pane fade" id="agenda">
   <div class="card p-4">
 
+    <h4 class="mb-4">Agenda</h4>
+
     <div class="timeline">
 
+      <!-- Registration -->
       <div class="timeline-item">
         <div class="time">11:30 – 12:00</div>
-        <div class="content"><i class="bi bi-person-check icon"></i><h5>Registration and Arrival</h5></div>
+        <div class="content">
+          <i class="bi bi-person-check icon"></i>
+          <div>
+            <h5 class="mb-1">Registration and Arrival</h5>
+          </div>
+        </div>
       </div>
 
+      <!-- Welcome -->
       <div class="timeline-item">
         <div class="time">12:00 – 12:10</div>
-        <div class="content"><i class="bi bi-megaphone icon"></i><h5>Welcome and Opening Remarks</h5></div>
+        <div class="content">
+          <i class="bi bi-megaphone icon"></i>
+          <div>
+            <h5 class="mb-1">Welcome and Opening Remarks</h5>
+          </div>
+        </div>
       </div>
 
+      <!-- Session 1 -->
       <div class="session-block">Session 1</div>
 
       <div class="timeline-item">
         <div class="time">12:10 – 12:50</div>
-        <div class="content"><i class="bi bi-cpu icon"></i><h5>Keynote: How the AI Tech Stack is Driving Digital Trade</h5></div>
+        <div class="content">
+          <i class="bi bi-cpu icon"></i>
+          <div>
+            <h5 class="mb-1">Keynote</h5>
+            <p class="desc mb-0">How the AI Tech Stack is Driving Digital Trade</p>
+          </div>
+        </div>
       </div>
 
+      <!-- Session 2 -->
       <div class="session-block">Session 2</div>
 
       <div class="timeline-item">
@@ -296,17 +330,26 @@ body {
         <div class="content">
           <i class="bi bi-diagram-3 icon"></i>
           <div>
-            <h5>Enabling Industry-led AI Innovation</h5>
-            <p class="desc">Examines cross-border data flows, regulatory interoperability, consumer protection, and cybersecurity.</p>
+            <h5 class="mb-1">Enabling Industry-led AI Innovation</h5>
+            <p class="desc">
+              This session will examine elements of an enabling ecosystem for AI innovation, including cross-border data flows, regulatory interoperability, consumer protection, and cybersecurity.
+            </p>
           </div>
         </div>
       </div>
 
+      <!-- Coffee Break -->
       <div class="timeline-item">
         <div class="time">1:40 – 1:55</div>
-        <div class="content break"><i class="bi bi-cup-hot icon"></i><h5>Coffee Break</h5></div>
+        <div class="content break-coffee">
+          <i class="bi bi-cup-hot icon"></i>
+          <div>
+            <h5 class="mb-0">Coffee Break</h5>
+          </div>
+        </div>
       </div>
 
+      <!-- Session 3 -->
       <div class="session-block">Session 3</div>
 
       <div class="timeline-item">
@@ -314,15 +357,27 @@ body {
         <div class="content">
           <i class="bi bi-people icon"></i>
           <div>
-            <h5>Accelerating AI through Collaboration</h5>
-            <p class="desc">Explores collaboration across government, industry, and stakeholders.</p>
+            <h5 class="mb-1">Accelerating AI through Collaboration</h5>
+            <p class="desc">
+              This session will examine how industry and government can work together to strengthen AI innovation across APEC economies.
+            </p>
+            <p class="desc mb-0 mt-2">
+              <strong>Moderator:</strong> Name, Title<br>
+              <strong>Speaker:</strong> Dr. Ted Chang, Chief Technology Officer, Vice President, and General Manager, Quanta Computer
+            </p>
           </div>
         </div>
       </div>
 
+      <!-- Closing -->
       <div class="timeline-item">
         <div class="time">2:55 – 3:00</div>
-        <div class="content"><i class="bi bi-flag icon"></i><h5>Closing Remarks</h5></div>
+        <div class="content">
+          <i class="bi bi-flag icon"></i>
+          <div>
+            <h5 class="mb-0">Closing Remarks</h5>
+          </div>
+        </div>
       </div>
 
     </div>
