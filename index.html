@@ -135,6 +135,51 @@ body {
   flex: 1;
 }
 
+
+.icon {
+  font-size: 18px;
+  color: #355f7c;
+  margin-right: 10px;
+  margin-top: 4px;
+}
+
+.content {
+  display: flex;
+  align-items: flex-start;
+  gap: 10px;
+  background: white;
+  padding: 18px;
+  border-radius: 12px;
+  margin-left: 25px;
+  flex: 1;
+  box-shadow: 0 6px 18px rgba(0,0,0,0.06);
+}
+
+.content h5 {
+  margin: 0 0 5px;
+}
+
+/* Highlight important items */
+.highlight {
+  border-left: 4px solid #355f7c;
+}
+
+/* Break styling */
+.break {
+  background: #fff7e6;
+}
+
+/* Session labels */
+.session-label {
+  margin-left: 115px;
+  margin-bottom: 10px;
+  font-size: 13px;
+  font-weight: 600;
+  color: #6c7a89;
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+}
+
 /* SPEAKERS */
 .speaker-card {
   text-align: center;
@@ -252,39 +297,94 @@ body {
 
 <div class="timeline">
 
-<div class="timeline-item">
-<div class="time">11:30</div>
-<div class="content"><h5>Registration</h5></div>
-</div>
+<div class="card p-4">
 
-<div class="timeline-item">
-<div class="time">12:00</div>
-<div class="content"><h5>Opening Remarks</h5></div>
-</div>
+  <h3 class="mb-4">Agenda</h3>
 
-<div class="timeline-item">
-<div class="time">12:10</div>
-<div class="content"><h5>Keynote</h5></div>
-</div>
+  <div class="timeline">
 
-<div class="timeline-item">
-<div class="time">12:50</div>
-<div class="content"><h5>Session 2</h5></div>
-</div>
+    <div class="timeline-item">
+      <div class="time">11:30 – 12:00</div>
+      <div class="content">
+        <i class="bi bi-person-check icon"></i>
+        <div>
+          <h5>Registration and Arrival</h5>
+        </div>
+      </div>
+    </div>
 
-<div class="timeline-item">
-<div class="time">1:40</div>
-<div class="content"><h5>Coffee Break</h5></div>
-</div>
+    <div class="timeline-item">
+      <div class="time">12:00 – 12:10</div>
+      <div class="content highlight">
+        <i class="bi bi-megaphone icon"></i>
+        <div>
+          <h5>Welcome and Opening Remarks</h5>
+        </div>
+      </div>
+    </div>
 
-<div class="timeline-item">
-<div class="time">1:55</div>
-<div class="content"><h5>Session 3</h5></div>
-</div>
+    <div class="session-label">Session 1</div>
 
-</div>
+    <div class="timeline-item">
+      <div class="time">12:10 – 12:50</div>
+      <div class="content">
+        <i class="bi bi-cpu icon"></i>
+        <div>
+          <h5>Keynote: How the AI Tech Stack is Driving Digital Trade</h5>
+        </div>
+      </div>
+    </div>
 
-</div>
+    <div class="session-label">Session 2</div>
+
+    <div class="timeline-item">
+      <div class="time">12:50 – 1:40</div>
+      <div class="content">
+        <i class="bi bi-diagram-3 icon"></i>
+        <div>
+          <h5>Enabling Industry-led AI Innovation</h5>
+          <p>Explores cross-border data flows, regulatory interoperability, consumer protection, and cybersecurity.</p>
+        </div>
+      </div>
+    </div>
+
+    <div class="timeline-item">
+      <div class="time">1:40 – 1:55</div>
+      <div class="content break">
+        <i class="bi bi-cup-hot icon"></i>
+        <div>
+          <h5>Coffee Break</h5>
+        </div>
+      </div>
+    </div>
+
+    <div class="session-label">Session 3</div>
+
+    <div class="timeline-item">
+      <div class="time">1:55 – 2:55</div>
+      <div class="content">
+        <i class="bi bi-people icon"></i>
+        <div>
+          <h5>Accelerating AI through Collaboration</h5>
+          <p>Focuses on public-private collaboration across APEC economies.</p>
+          <p><strong>Moderator:</strong> Name, Title</p>
+          <p><strong>Speaker:</strong> Dr. Ted Chang, Quanta Computer</p>
+        </div>
+      </div>
+    </div>
+
+    <div class="timeline-item">
+      <div class="time">2:55 – 3:00</div>
+      <div class="content highlight">
+        <i class="bi bi-flag icon"></i>
+        <div>
+          <h5>Closing Remarks</h5>
+        </div>
+      </div>
+    </div>
+
+  </div>
+
 </div>
 
 <!-- SPEAKERS -->
