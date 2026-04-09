@@ -70,13 +70,6 @@ body {
   color: #355f7c;
 }
 
-<footer class="footer">
-  <div class="container text-center">
-    <p class="mb-1">APEC Digital Trade Policy Dialogue</p>
-    <p class="small text-muted">April 22, 2026 • Mexico City, Mexico</p>
-  </div>
-</footer>
-
 .footer {
   margin-top: 80px;
   padding: 40px 0;
@@ -118,9 +111,15 @@ body {
 }
 
 .timeline::before {
-  left: 85px;
+  display: none;
 }
 
+.desc {
+  font-size: 14px;
+  color: #5f6b7a;
+  margin-top: 4px;
+}
+  
 .timeline-item {
   display: flex;
   margin-bottom: 18px;
@@ -187,7 +186,14 @@ body {
 </style>
 
 </head>
-
+  
+<footer class="footer">
+  <div class="container text-center">
+    <p class="mb-1">APEC Digital Trade Policy Dialogue</p>
+    <p class="small text-muted">April 22, 2026 • Mexico City, Mexico</p>
+  </div>
+</footer>
+  
 <body>
 
 <div class="header">
@@ -331,7 +337,7 @@ body {
         <i class="bi bi-diagram-3 icon"></i>
         <div>
           <h5>Enabling Industry-led AI Innovation</h5>
-          <p>This session will examine elements of an enabling ecosystem for AI innovation, including cross-border data flows, regulatory interoperability, consumer protection, and cybersecurity, highlighting industry leaders across the region.</p>
+          <p class="desc">This session will examine elements of an enabling ecosystem for AI innovation, including cross-border data flows, regulatory interoperability, consumer protection, and cybersecurity, highlighting industry leaders across the region.</p>
         </div>
       </div>
     </div>
@@ -354,7 +360,7 @@ body {
         <i class="bi bi-people icon"></i>
         <div>
           <h5>Accelerating AI through Collaboration</h5>
-          <p>This session will examine how industry and government, along with other stakeholders, can work together to strengthen AI innovation with examples from APEC economies of stakeholder collaboration.</p>
+          <p class="desc">This session will examine how industry and government, along with other stakeholders, can work together to strengthen AI innovation with examples from APEC economies of stakeholder collaboration.</p>
           <p><strong>Moderator:</strong> Name, Title</p>
           <p><strong>Speaker:</strong> Dr. Ted Chang, Quanta Computer</p>
         </div>
